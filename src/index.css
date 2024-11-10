@@ -1,0 +1,28 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Creato;
+  src: url("./assets/CreatoDisplay-Medium.otf");
+
+}
+
+
+/*
+
+red = #8f2c2a
+rgb(143,44,42)
+black = #060908
+rgba(7,10,9,255)
+*/
+
+
+
+body {
+  margin: 0;
+  font-family: Creato;
+  
+}

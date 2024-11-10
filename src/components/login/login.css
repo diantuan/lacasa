@@ -1,0 +1,61 @@
+.loginVideo{
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: -1;
+  /* background-color: #060908; */
+  object-fit: cover;
+}
+
+.loginForm{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: solid 2px #8f2c2a;
+  border-radius: 10px;
+  height:200px;
+  width:20%;
+  min-width:300px;
+  padding-inline: 20px;
+  background-color: rgba(0,0,0, .5)
+}
+
+.loginInput{
+  border-radius: 5px;
+  width:100%;
+  height:30px;
+  text-align: center;
+  background-color: black;
+  color:white;
+  margin-top: 4px;
+}
+
+.loginInput:focus{
+  outline:solid 1px #8f2c2a;
+}
+
+.loginInput::placeholder{
+  margin:30%;
+  color: white;
+  opacity: 70%;
+}
+
+.loginButton{
+  border-radius: 5px;
+  width:50%;
+  height:30px;
+  margin:0 auto;
+  background-color: rgb(54, 43, 43);
+  color:white;
+
+}
+
+.loginButton:active{
+  background-color: black;
+}

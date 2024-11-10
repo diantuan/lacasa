@@ -1,0 +1,58 @@
+[
+  {
+    "id":"1",
+    "firstName": "Monica",
+    "lastName" : "Beverly Hills",
+    "address":"Los Angeles, CA",
+    "cardNumber": "5098 8123 1352 8953",
+    "funds" : 23000,
+    "username": "monica",
+    "password": "monica"
+  },
+  {
+    "id" : "2",
+    "firstName":"Hemely",
+    "lastName": "Effair",
+    "address":"Long Island, NYC",
+    "cardNumber":"8242 0238 4289 2482",
+    "funds": 5200,
+    "username":"hemely",
+    "password":"hemely"
+  },
+  {
+    "id" : "3",
+    "firstName":"Jonna Mae",
+    "lastName": "Evangelista",
+    "address":"Atlanta, GA",
+    "cardNumber":"4958 0536 3506 2345",
+    "funds": 12980,
+    "username":"jonna",
+    "password":"jonna"
+  },
+  {
+    "id" : "4",
+    "firstName":"Gonna",
+    "lastName": "Sy",
+    "address":"San Francisco, CA",
+    "cardNumber":"5372 4562 7839 3457",
+    "funds": 300,
+    "username":"gonna",
+    "password":"gonna"
+  },
+  {
+    "id" : "5",
+    "firstName":"Donna",
+    "lastName": "Tacht",
+    "address":"Seattle, WA",
+    "cardNumber":"9428 3572 9473 5376",
+    "funds": 17600
+  },
+  {
+    "id" : "6",
+    "firstName":"Ginger",
+    "lastName": "Minj",
+    "address":"Los Angles, CA",
+    "cardNumber":"4636 2469 0345 3579",
+    "funds": 3200
+  }
+]
