@@ -1,0 +1,23 @@
+
+  {
+    "budget":50000,
+    "expenses": [{
+      "name": "Operating Expense",
+      "amount":10000
+    },
+    {
+      "name":"Prepaid Expense",
+      "amount":2000
+    },
+    {
+      "name":"Drawings",
+      "amount":4000
+    },
+    {
+      "name":"Utility Expense",
+      "amount":8000
+    }
+  ]
+     
+    
+  }

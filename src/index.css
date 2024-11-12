@@ -24,5 +24,11 @@ rgba(7,10,9,255)
 body {
   margin: 0;
   font-family: Creato;
-  
+  background-color: rgba(16,16,16,255);
+  overflow: hidden;
 }
+
+.right-align{
+  text-align:right;
+}
+

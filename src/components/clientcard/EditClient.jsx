@@ -20,7 +20,7 @@ const EditClient = () => {
   const handleSubmit = (e) =>{
     e.preventDefault();
     editClient(id, firstName, lastName, address, cardNumber);
-    navigate(`/clients/${id}`)
+    // navigate(`/clients/${id}`)
   }
 
   const handleClose = ()=>{

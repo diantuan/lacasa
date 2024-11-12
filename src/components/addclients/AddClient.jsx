@@ -34,7 +34,7 @@ const AddClient = () => {
 
   }
   return ( <div>
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="addClientForm">
       <input type="text" onChange={e=>setFirstName(e.target.value)} placeholder="First Name" required></input>
       <input type="text" onChange={e=>setLastName(e.target.value)} placeholder="Last Name" required></input>
       <input type="text" onChange={e=>setAddress(e.target.value)} placeholder="Address" required></input>

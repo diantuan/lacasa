@@ -1,0 +1,10 @@
+.budgetHead, .expenses, .budgetTotal{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.budgetContainer{
+  width:50%;
+  margin:0 auto;
+}
+

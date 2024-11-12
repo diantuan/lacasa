@@ -7,16 +7,23 @@ const Withdraw = () => {
   const [from, setFrom] = useState(null);
   const [amount, setAmount] = useState(null);
 
-  const handleSubmit = ()=>{
-    withdraw(from, Number(amount))
+  const handleSubmit = (e)=>{
+    e.preventDefault();
+    if(from==null || Number(amount)<=0){
+       alert("Please select an account or a valid amount.")
+      }
+    else{
+      withdraw(from, Number(amount))
+      }
+    
   }
 
-  return ( <div>
+  return ( <div className="transFormContainer">
     <h2>Withdraw</h2>
-    <form onSubmit ={handleSubmit}>
+    <form onSubmit ={handleSubmit} className="transactionForm">
       <select onChange = {e=>setFrom(e.target.value)} required>
-        <option selected disabled>Withdraw From</option>
-        {clients.map(client=>(<option value={client.id}>{client.lastName}, {client.firstName}</option>))}
+        <option value="null">Withdraw From</option>
+        {clients.map(client=>(<option key= {client.id} value={client.id}>{client.lastName}, {client.firstName}</option>))}
       </select>
     
       <input type="number" placeholder="Amount to Withdraw" onChange = {e=>setAmount(e.target.value)} required></input>

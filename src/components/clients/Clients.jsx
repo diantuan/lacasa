@@ -1,4 +1,4 @@
-import { useContext,  } from 'react';
+import { useContext  } from 'react';
 import './clients.css';
 import { clientContext } from '../ClientHandling.jsx';
 import { Link, Outlet } from 'react-router-dom';
@@ -6,9 +6,10 @@ import { Link, Outlet } from 'react-router-dom';
 const Clients = () => {
 
   let {clients} = useContext(clientContext);
-
+  console.log(clients)
 
   return ( <div>
+   
    <div className='tableHead'>
     <div>Client Name</div>
     <div>Address</div>

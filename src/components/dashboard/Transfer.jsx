@@ -10,20 +10,30 @@ const Transfer = () => {
   const [to, setTo] = useState(null);
   const [amount, setAmount] = useState(null);
 
-  const handleSubmit = ()=>{
-    transfer(from, to, Number(amount))
+  const handleSubmit = (e)=>{
+    e.preventDefault();
+    if(from==null || to==null || Number(amount)<=0){
+      alert("Please select an account or a valid amount.")
+    }
+    else if(from==to){
+      alert("Accounts cannot transfer to themselves.")
+    }
+    else{
+      transfer(from, to, Number(amount))
+    }
+    
   }
 
-  return ( <div>
+  return ( <div className="transFormContainer">
     <h2>Transfer</h2>
-    <form onSubmit ={handleSubmit}>
+    <form onSubmit ={handleSubmit} className="transactionForm">
       <select onChange = {e=>setFrom(e.target.value)} required>
-        <option selected disabled>Transfer From</option>
-        {clients.map(client=>(<option value={client.id}>{client.lastName}, {client.firstName}</option>))}
+        <option value="null">Transfer From</option>
+        {clients.map(client=>(<option key= {client.id} value={client.id}>{client.lastName}, {client.firstName}</option>))}
       </select>
       <select onChange = {e=>setTo(e.target.value)} required>
-        <option selected disabled>Transfer To</option>
-        {clients.map(client=>(<option value={client.id}>{client.lastName}, {client.firstName}</option>))}
+        <option value="null">Transfer To</option>
+        {clients.map(client=>(<option key= {client.id} value={client.id}>{client.lastName}, {client.firstName}</option>))}
       </select>
       <input type="number" placeholder="Amount to Transfer" onChange = {e=>setAmount(e.target.value)} required></input>
       <button type="submit">Transfer</button>
