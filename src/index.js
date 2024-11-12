@@ -3,18 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import './assets/CreatoDisplay-Medium.otf';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <BrowserRouter  future={{
+  <HashRouter  future={{
     v7_relativeSplatPath: true,
     v7_startTransition: true
   }}>
     <App />
-  </BrowserRouter>
+  </HashRouter>
   </React.StrictMode>
 );
 
