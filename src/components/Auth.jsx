@@ -16,6 +16,8 @@ const AuthProvider = ({children}) =>{
 
   const [currentUser, setCurrentUser] = useState(userSaved);
 
+  const [loginError, setLoginError] = useState(null);
+
 
   const login = (username, password) =>{
     
@@ -29,6 +31,9 @@ const AuthProvider = ({children}) =>{
       localStorage.setItem("currentuser", JSON.stringify(userFound));
       navigate("/")
     }
+    else{
+      setLoginError("Wrong username or password")
+    }
   }
 
   const logout = ()=>{
@@ -41,7 +46,7 @@ const AuthProvider = ({children}) =>{
   }
 
   return <div>
-    <authContext.Provider value={{isLoggedIn, login, logout, currentUser}}>
+    <authContext.Provider value={{isLoggedIn, login, logout, currentUser, loginError}}>
      {children}
     </authContext.Provider>
   </div>

@@ -59,3 +59,57 @@
 .loginButton:active{
   background-color: black;
 }
+
+.loginError{
+  color:#8f2c2a;
+  text-align: center;
+}
+
+.loadingFace{
+  width:100vw;
+  height:100vh;
+  z-index:2;
+  background-color: black;
+  
+}
+
+.loadingFace img{
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  width:30%;
+  
+}
+
+.loadingBox{
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:30%;
+  height:60%;
+  animation-name:loading;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  background-color: black;
+  animation-timing-function: linear;
+}
+
+@keyframes loading {
+  from{
+   transform:translate(-50%,-50%)
+  }
+  to{
+    transform: translate(50%, -50%);
+  }
+}
+
+.entering{
+  color:#8f2c2a;
+  position:absolute;
+  bottom:10%;
+  left:50%;
+  transform: translate(-50%);
+  font-size: 1.5em;
+}

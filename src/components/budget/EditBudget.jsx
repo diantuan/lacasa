@@ -37,7 +37,7 @@ const EditBudget = ({editExpenses, budget, expenses, setBudget}) => {
 
   const handleEdit = (e)=>{
     e.preventDefault();
-    if(expenseType==null || expenseType!==""){
+    if(expenseType==null || expenseType===""){
       alert("Select an Expense Type")
     }else{
       editExpenses(expenseType, expenseAmount)

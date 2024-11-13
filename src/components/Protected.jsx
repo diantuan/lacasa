@@ -10,6 +10,7 @@ const Protected = () => {
 
   if(isLoggedIn){
     return (<div className="protected">
+      
       <Navbar />
       <div className="protectedOutletContainer">
         <Outlet/>

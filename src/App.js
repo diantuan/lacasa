@@ -12,6 +12,7 @@ import BudgetList from './components/budget/BudgetList.jsx';
 import Deposit from './components/dashboard/Deposit.jsx';
 import Withdraw from './components/dashboard/Withdraw.jsx';
 import Transfer from './components/dashboard/Transfer.jsx';
+import Profile from './components/userprofile/Profile.jsx';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
                 </Route>
                 <Route path="/addclient" element={<AddClient/>}/>
                 <Route path="/budgeting" element={<BudgetList/>}/>
+                <Route path="/profile" element={<Profile />}/>
                 
             </Route>
 

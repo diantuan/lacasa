@@ -1,20 +1,35 @@
 [
   {
     "id":"0",
-    "employeeName":"admin",
+    "employeeName":"Profesor",
     "username":"admin",
-    "password":"1234"
+    "password":"1234",
+    "imgLoc" : "cf0b7475f26c043b55fe50cfb98c15d5.png",
+    "legalName":"Sergio Marquina",
+    "age":"39",
+    "address": "Madrid, Spain",
+    "description" :"I’m the Professor, the mastermind behind two of the most infamous heists in history: the Royal Mint of Spain and the Bank of Spain. My first job was to print billions of euros in the Royal Mint, orchestrating a flawless plan with a carefully chosen team of criminals. We outsmarted the police and the media, creating a narrative of rebellion against an unjust system. Then came the Bank of Spain heist, even more ambitious, where we targeted gold and took on even greater risks. Both heists were more than just about money—they were about defying authority and proving that the system could be outsmarted. I may be a criminal, but my true crime is bending the system to my will."
   },
   {
     "id" : "1",
     "employeeName" : "Tokyo",
     "username": "tokyo",
-    "password" : "1234"
+    "password" : "1234",
+    "imgLoc": "actor-tokyo-money-heist-169378_large.jpg",
+    "legalName" : "Silene Oliveira",
+    "age":"34",
+    "address": "Madrid, Spain",
+    "description":"I’m Tokyo, and I’ve never been one to follow the rules. I’ve lived a life full of chaos and danger, and that’s exactly what led me to the Royal Mint heist. I joined the crew because I wanted to escape the mess I’d made of my own life—running from the law, always one step away from disaster. In the Mint, I found purpose and a family, even if it was a dysfunctional one. I didn’t hesitate when it came to following orders, but I didn’t always play by the book either. After the Mint, we moved on to the Bank of Spain, and that’s when everything really started to spiral. The stakes were higher, and emotions were more dangerous than ever. I never planned to fall in love or get caught up in the chaos, but that's the thing about this life—it takes you places you never expect. Crime’s been my life, and no matter what happens, I’m in it until the end."
   },
   {
     "id" : "2",
     "employeeName":"Berlin",
     "username": "berlin",
-    "password":"1234"
+    "password":"1234",
+    "imgLoc": "images (3).jpg",
+    "legalName":"Andrés de Fonollosa",
+    "age":"41",
+    "address": "Madrid, Spain",
+    "description":"I’m Berlin, the Professor’s older brother, and the mastermind behind the original plan for the Royal Mint heist. I’m a man of control, a strategist at heart, and I’ve always preferred operating in the shadows. My role was clear—lead the team in the Mint while the Professor orchestrated everything from behind the scenes. I’m not a man of patience, so I didn’t shy away from the more hands-on aspects of the job. After that, I took a more central role in the Bank of Spain heist, where the stakes were even higher. The plan was ambitious, risky, but I’ve never been one to shy away from danger. I know the cost of getting too close to people, but in the end, I was always driven by one thing: power. Whether it’s in love, life, or crime, I’m always in control."
   }
 ]
