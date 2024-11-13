@@ -4,7 +4,7 @@
   position:fixed;
   top:0;
   left:0;
-  z-index: -1;
+  z-index: -2;
   /* background-color: #060908; */
   object-fit: cover;
 }
@@ -23,7 +23,8 @@
   width:20%;
   min-width:300px;
   padding-inline: 20px;
-  background-color: rgba(0,0,0, .5)
+  background-color: rgba(0,0,0, .5);
+  z-index:-1;
 }
 
 .loginInput{
@@ -65,51 +66,56 @@
   text-align: center;
 }
 
-.loadingFace{
+
+
+.faceWrapper{
   width:100vw;
   height:100vh;
   z-index:2;
   background-color: black;
+  position: absolute;
+  top:0;
+  left:0;
   
 }
 
-.loadingFace img{
+.loadingFace{
   position: absolute;
   left:50%;
   top:50%;
   transform: translate(-50%,-50%);
-  width:30%;
+  width:14.5%;
+ 
   
 }
 
-.loadingBox{
+.loadingFaceGray{
   position: absolute;
   left:50%;
   top:50%;
-  transform:translate(-50%,-50%);
-  width:30%;
-  height:60%;
-  animation-name:loading;
+  transform: translate(-50%,-50%);
+  filter: grayscale(100%) contrast(1000%);
+  width:15%;
+  animation-name: loading;
   animation-duration: 5s;
   animation-iteration-count: 1;
-  background-color: black;
-  animation-timing-function: linear;
+
 }
+
 
 @keyframes loading {
   from{
-   transform:translate(-50%,-50%)
+    clip-path: inset(0 0 0 0);
   }
   to{
-    transform: translate(50%, -50%);
+    clip-path: inset(0 0 0 100%);
   }
 }
 
 .entering{
   color:#8f2c2a;
-  position:absolute;
-  bottom:10%;
+  position: absolute;
   left:50%;
+  top:75%;
   transform: translate(-50%);
-  font-size: 1.5em;
 }
