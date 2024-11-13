@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/lacasa/static/css/main.824d7742.css",
-    "main.js": "/lacasa/static/js/main.aa6fca9d.js",
+    "main.css": "/lacasa/static/css/main.dc90060b.css",
+    "main.js": "/lacasa/static/js/main.d65724dd.js",
     "static/js/453.216e47c6.chunk.js": "/lacasa/static/js/453.216e47c6.chunk.js",
     "static/media/LaCasaVideo.mp4": "/lacasa/static/media/LaCasaVideo.1f671fc5fd17fa84fa86.mp4",
+    "static/media/png": "/lacasa/static/media/cf0b7475f26c043b55fe50cfb98c15d5.494060156eb6fffd4f6e.png",
     "static/media/la-casa-de-papel.png": "/lacasa/static/media/la-casa-de-papel.e3bfae269871900e1337.png",
+    "static/media/actor-tokyo-money-heist-169378_large.jpg": "/lacasa/static/media/actor-tokyo-money-heist-169378_large.6bfbaf564e7fe9f9695b.jpg",
     "static/media/Money-Heist-Face-Mask-Background-PNG-Image.png": "/lacasa/static/media/Money-Heist-Face-Mask-Background-PNG-Image.a7604f6fca32a1a3233f.png",
     "static/media/CreatoDisplay-Medium.otf": "/lacasa/static/media/CreatoDisplay-Medium.ee677d4fa2edd853d112.otf",
     "index.html": "/lacasa/index.html",
-    "main.824d7742.css.map": "/lacasa/static/css/main.824d7742.css.map",
-    "main.aa6fca9d.js.map": "/lacasa/static/js/main.aa6fca9d.js.map",
+    "main.dc90060b.css.map": "/lacasa/static/css/main.dc90060b.css.map",
+    "main.d65724dd.js.map": "/lacasa/static/js/main.d65724dd.js.map",
     "453.216e47c6.chunk.js.map": "/lacasa/static/js/453.216e47c6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.824d7742.css",
-    "static/js/main.aa6fca9d.js"
+    "static/css/main.dc90060b.css",
+    "static/js/main.d65724dd.js"
   ]
 }
