@@ -59,7 +59,7 @@ const AddClient = () => {
       <input type="text" onChange={e=>setLastName(e.target.value)} placeholder="Last Name" required></input>
       <input type="text" onChange={e=>setAddress(e.target.value)} placeholder="Address" required></input>
       <input type="number" onChange={e=>setCardNumber(e.target.value)} placeholder="Card Number" required></input>
-      <input type="number" onChange={e=>setFunds(e.target.value)} placeholder="Amount to Deposit" required></input>
+      <input type="number" onChange={e=>setFunds(Number(e.target.value))} placeholder="Amount to Deposit" required></input>
       <input type="text" onChange={e=>setUsername(e.target.value)} placeholder="client username" required></input>
       <input type="password" onChange={e=>setPassword(e.target.value)} placeholder="client password" required></input>
       <button type="submit">Add</button>

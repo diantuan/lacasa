@@ -42,6 +42,7 @@ const ClientCard = () => {
       <div>${foundClient.funds} -</div>
       
       <div className="face"><img src={face} alt="face"></img></div>
+      
       <div className="actions">
         <Link to={`/clients/${foundClient.id}/deposit`} className="action" onClick={()=>setOutletOn(true)}>Deposit</Link>
         <Link to={`/clients/${foundClient.id}/withdraw`} className="action" onClick={()=>setOutletOn(true)}>Withdraw</Link>

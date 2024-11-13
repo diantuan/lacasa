@@ -45,6 +45,8 @@ const AuthProvider = ({children}) =>{
     
   }
 
+  
+
   return <div>
     <authContext.Provider value={{isLoggedIn, login, logout, currentUser, loginError}}>
      {children}
