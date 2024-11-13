@@ -2,11 +2,13 @@ import { useContext, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { clientContext } from "../ClientHandling";
 
+
 const EditClient = () => {
 
   const {id} = useParams();
   const {clients, editClient} = useContext(clientContext);
-  const navigate = useNavigate();
+  
+  const navigate = useNavigate(null)
 
   let foundclient = clients.find(client=>client.id===id);
 
@@ -20,15 +22,12 @@ const EditClient = () => {
   const handleSubmit = (e) =>{
     e.preventDefault();
     editClient(id, firstName, lastName, address, cardNumber);
-    // navigate(`/clients/${id}`)
-  }
-
-  const handleClose = ()=>{
     navigate(`/clients/${id}`)
   }
 
+  
 
-  return ( <div>
+  return ( <div className="editclient">
     <form onSubmit={handleSubmit}>
       <input type="text" onChange={e=>setFirstName(e.target.value)} placeholder="First Name" value={firstName}></input>
       <input type="text" onChange={e=>setLastName(e.target.value)} placeholder="Last Name" value={lastName}></input>
@@ -36,8 +35,7 @@ const EditClient = () => {
       <input type="text" onChange={e=>setCardNumber(e.target.value)} placeholder="Card Number" value={cardNumber}></input>
       
       <button type="submit">Edit</button>
-      <i onClick = {handleClose}
-      className="fa-solid fa-delete-left"></i>
+      
     </form>
   </div> );
 }

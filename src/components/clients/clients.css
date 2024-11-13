@@ -1,10 +1,17 @@
 .clientList{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-
+  border-bottom:1px solid rgba(143,44,42,.8);
+  margin-top:5px;
 }
 
 .tableHead{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top:20px;
+  font-weight: bold;
+}
+
+.clientspage{
+  height:100%;
 }

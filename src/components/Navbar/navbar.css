@@ -18,14 +18,20 @@
   box-shadow: 1px -10px 10px rgba(30, 29, 29, 0.607);
 }
 
+
 .navlink:focus{
   padding-top:2px;
   background-color:rgba(255,255,255,.8);
   height:36px;
+  color:rgb(143,44,42);
+  text-shadow: none;
+
 }
 
 .defaultFocus{
   padding-top:2px;
   background-color:rgba(255,255,255,.8);
   height:36px;
+  color:rgb(143,44,42);
+  text-shadow: none;
 }

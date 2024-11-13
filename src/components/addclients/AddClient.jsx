@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import './addclient.css'
 import { clientContext } from "../ClientHandling";
 import { useNavigate } from "react-router-dom";
+import face from '../../assets/Money-Heist-Face-Mask-Background-PNG-Image.png'
 
 const AddClient = () => {
 
@@ -33,7 +34,26 @@ const AddClient = () => {
     navigate("/clients");
 
   }
-  return ( <div>
+  return ( <div className="addclient">
+    <h2>Add a new client</h2>
+
+    <div className="card">
+      <div className="cardheader">
+        <h3>Client Info</h3> 
+
+      </div>
+      <div><i className="fa-solid fa-sim-card sim"></i></div>
+      <div className="face"><img src={face} alt="face"></img></div>
+      <div>{firstName} {lastName}</div>
+      <div>{address}</div>
+      <div>{cardNumber}</div>
+      <div>${funds} -</div>
+
+      
+    </div>
+
+
+
     <form onSubmit={handleSubmit} className="addClientForm">
       <input type="text" onChange={e=>setFirstName(e.target.value)} placeholder="First Name" required></input>
       <input type="text" onChange={e=>setLastName(e.target.value)} placeholder="Last Name" required></input>

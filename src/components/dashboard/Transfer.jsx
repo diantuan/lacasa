@@ -15,7 +15,7 @@ const Transfer = () => {
     if(from==null || to==null || Number(amount)<=0){
       alert("Please select an account or a valid amount.")
     }
-    else if(from==to){
+    else if(from===to){
       alert("Accounts cannot transfer to themselves.")
     }
     else{
@@ -25,7 +25,7 @@ const Transfer = () => {
   }
 
   return ( <div className="transFormContainer">
-    <h2>Transfer</h2>
+    <h2 className="transactionTitle">Transfer</h2>
     <form onSubmit ={handleSubmit} className="transactionForm">
       <select onChange = {e=>setFrom(e.target.value)} required>
         <option value="null">Transfer From</option>

@@ -12,7 +12,9 @@ const AuthProvider = ({children}) =>{
   const [isLoggedIn, setIsLoggedIn] = useState(loginStatus);
   const navigate = useNavigate();
 
- 
+  let userSaved = JSON.parse(localStorage.getItem("currentuser"))
+
+  const [currentUser, setCurrentUser] = useState(userSaved);
 
 
   const login = (username, password) =>{
@@ -23,19 +25,23 @@ const AuthProvider = ({children}) =>{
       let loginStatus = true;
       setIsLoggedIn(loginStatus);
       localStorage.setItem("loginstatus", JSON.stringify(loginStatus));
+      setCurrentUser(userFound);
+      localStorage.setItem("currentuser", JSON.stringify(userFound));
       navigate("/")
     }
   }
 
   const logout = ()=>{
     localStorage.clear("loginstatus");
+    localStorage.clear("currentuser");
     setIsLoggedIn(false);
+    setCurrentUser(null);
     navigate("/login")
     
   }
 
   return <div>
-    <authContext.Provider value={{isLoggedIn, login, logout}}>
+    <authContext.Provider value={{isLoggedIn, login, logout, currentUser}}>
      {children}
     </authContext.Provider>
   </div>

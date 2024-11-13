@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import './budget.css'
 
 const EditBudget = ({editExpenses, budget, expenses, setBudget}) => {
 
@@ -29,7 +30,7 @@ const EditBudget = ({editExpenses, budget, expenses, setBudget}) => {
     alert("Please input an expense type.")
    }else{
     editExpenses(newExpense, newExpenseAmount);
-
+    newRef.current.close();
    }
     
   }
@@ -50,7 +51,7 @@ const EditBudget = ({editExpenses, budget, expenses, setBudget}) => {
   }
 
 
-  return ( <div>
+  return ( <div className="budgetEditing">
     <form>
       <label>Budget</label>
       <input type="number" value={localBudget} onChange={e=>setLocalBudget(e.target.value)}required></input>

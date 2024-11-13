@@ -1,4 +1,35 @@
+.addclient{
+  height:100%;
+}
+
 .addClientForm{
-  position:fixed;
-  left:10%;
+  margin-top:10px;
+  display:flex;
+  flex-direction: column;
+  gap:5px;
+  background-color: transparent;
+  width: 70%;
+  align-items: center;
+  text-align: center;
+  margin-inline:auto;
+  
+}
+.addClientForm input{
+  border:none;
+  border-bottom:2px solid cadetblue;
+  font-size:.8em;
+  background-color: transparent;
+  width:100%;
+}
+.addClientForm button{
+  background-color: rgb(143,44,42);
+  width:30%;
+  color:floralwhite;
+  border:none;
+  border-radius: 5px;
+  height:30px;
+
+}
+.addClientForm button:hover{
+  background-color: dimgray
 }

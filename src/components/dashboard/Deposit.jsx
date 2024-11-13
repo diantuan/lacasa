@@ -20,7 +20,7 @@ const Deposit = () => {
   }
 
   return ( <div className="transFormContainer">
-    <h2>Deposit</h2>
+    <h2 className="transactionTitle">Deposit</h2>
     <form onSubmit ={handleSubmit} className="transactionForm">
       <select onChange = {e=>setFrom(e.target.value)} required>
       <option value="null">Deposit To</option>

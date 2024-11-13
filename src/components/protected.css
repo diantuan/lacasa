@@ -40,8 +40,21 @@
   transition-duration: .3s;
   box-shadow: 1px 1px 20px black;
   height:85%;
+  overflow:auto;
 }
 
 .protectedOutletContainer:hover{
   background-color:rgba(255,255,255,.8) ;
+}
+
+.protectedOutletContainer::-webkit-scrollbar{
+  width:3px;
+  
+}
+.protectedOutletContainer::-webkit-scrollbar-track{
+ background-color: transparent;
+}
+
+.protectedOutletContainer::-webkit-scrollbar-thumb{
+  background-color: brown;
 }

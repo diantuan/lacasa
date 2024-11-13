@@ -2,6 +2,7 @@ import { useState } from 'react';
 import data from '../../data/budget.json';
 import Edit from './EditBudget';
 import './budget.css'
+import { BarChart } from '@mui/x-charts/BarChart';
 
 
 const BudgetList = () => {
@@ -26,21 +27,55 @@ const BudgetList = () => {
     }
   }
 
+  const deleteExpense = (name)=>{
+    let newArray = expenses.filter(expense=>(expense.name!==name));
+    setExpenses(newArray)
+  
+  }
 
 
-  return ( <div className="budgetContainer">
-    <div className="budgetHead">
-    <div>Budget</div><div className="right-align">${budget}</div>
+
+  return ( <div>
+    <div  className="budgetPage">
+    <h2>Custom Budgeting Simulator</h2>
+    <div className="budgetContainer">
+      <div className="budgetHead">
+      <div>Initial Budget</div><div className="right-align">${budget}</div>
+      </div>
+      {expenses && expenses.map(expense=>(<div key={expense.name} className="expenses">
+        
+        <div><i className="fa-solid fa-trash" onClick={()=>deleteExpense(expense.name)}></i>{expense.name}</div><div className="right-align">{expense.amount}</div>
+        </div>))}
+      <div className="budgetTotal">
+        <div>Net Budget</div>
+        <div className="right-align">${budget-(expenses.reduce((acc, el)=>{return acc+el.amount}, 0))}</div>
+      </div> 
     </div>
-    {expenses && expenses.map(expense=>(<div key={expense.name} className="expenses">
-      <div>{expense.name}</div><div className="right-align">{expense.amount}</div>
-      </div>))}
-    <div className="budgetTotal">
-      <div>Net Budget</div>
-      <div className="right-align">${budget-(expenses.reduce((acc, el)=>{return acc+el.amount}, 0))}</div>
-    </div> 
-    <Edit  editExpenses={editExpenses} budget={budget} expenses={expenses} setBudget={setBudget}/>
-    
+    <div className='editContainer'>
+      <Edit  editExpenses={editExpenses} budget={budget} expenses={expenses} setBudget={setBudget}/>
+    </div>
+    </div>
+
+    <div className='barChart'>
+    <BarChart
+  xAxis={[
+    {
+      id: 'barCategories',
+      data: expenses.map(expense=>(`${expense.name}`)),
+      scaleType: 'band',
+    },
+  ]}
+  series={[
+    {
+      data: expenses.map(expense=>(expense.amount)),
+    },
+  ]}
+  width={500}
+  height={300}
+/>
+<h2>Bar Graph of Expenses</h2>
+</div>
+  
   </div> );
 }
  

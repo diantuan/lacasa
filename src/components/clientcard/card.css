@@ -1,0 +1,80 @@
+.card{
+  background-image: linear-gradient(to top right, rgba(16,16,16,255), rgb(76,76,84), rgb(210,213,210), cadetblue, rgb(235,43,51)) ;
+  width:60%;
+  border-radius: 20px;
+  margin-inline:auto;
+  margin-top: 20px;;
+  height:50%;
+  padding:10px;
+  text-shadow: 0 1px 3px black;
+  color:whitesmoke;
+  position:relative;
+}
+
+.cardheader{
+  display: flex;
+  justify-content: space-between;
+  color:black;
+}
+
+.sim{
+  font-size: 2.2em;
+  text-align: right;
+  width:90%;
+}
+
+.face img{
+  width:80px;
+  position: absolute;
+  right:5%;
+  bottom:20%;
+  opacity: .5;
+  filter:drop-shadow(10px 4px cadetblue);
+  
+}
+
+.actions{
+  display: flex;
+  width:90%;
+  justify-content: space-around;
+  position:absolute;
+  bottom:5%;
+}
+.action{
+  text-decoration: none;
+  background-color: rgba(143,44,42,.8);
+  color:white;
+  width:30%;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px black;
+}
+
+.actionresult{
+  width:30%;
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%,-50%)
+}
+
+.editclient form{
+  background-color: rgba(16,16,16,255);
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  width:60%;
+  margin-inline:auto;
+  padding:10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px white;;
+}
+.editclient input{
+  height:22px;
+  border-radius: 5px;
+}
+
+.editclient button{
+  color:white;
+  background-color: rgba(143,44,42,.8);
+}

@@ -19,7 +19,7 @@ const Withdraw = () => {
   }
 
   return ( <div className="transFormContainer">
-    <h2>Withdraw</h2>
+    <h2 className="transactionTitle">Withdraw</h2>
     <form onSubmit ={handleSubmit} className="transactionForm">
       <select onChange = {e=>setFrom(e.target.value)} required>
         <option value="null">Withdraw From</option>

@@ -6,9 +6,11 @@ import { Link, Outlet } from 'react-router-dom';
 const Clients = () => {
 
   let {clients} = useContext(clientContext);
-  console.log(clients)
+ 
 
-  return ( <div>
+  return ( <div className='clientspage'>
+
+    <h2>Current La Casa Bank Clients</h2>
    
    <div className='tableHead'>
     <div>Client Name</div>
@@ -20,7 +22,7 @@ const Clients = () => {
       <div><Link to ={`/clients/${client.id}`} ><i className="fa-solid fa-arrow-up-right-from-square"></i></Link>{client.lastName} , {client.firstName} </div>
       <div>{client.address}</div>
       <div>{client.cardNumber}</div>
-      <div>${client.funds}</div>
+      <div className="right-align">${client.funds}</div>
       </div>
    ))}
    <Outlet />
