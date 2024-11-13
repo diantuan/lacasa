@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/lacasa/static/css/main.c39bea22.css",
-    "main.js": "/lacasa/static/js/main.6a1f8c3f.js",
+    "main.js": "/lacasa/static/js/main.f8da5a6a.js",
     "static/js/453.216e47c6.chunk.js": "/lacasa/static/js/453.216e47c6.chunk.js",
     "static/media/LaCasaVideo.mp4": "/lacasa/static/media/LaCasaVideo.1f671fc5fd17fa84fa86.mp4",
     "static/media/png": "/lacasa/static/media/cf0b7475f26c043b55fe50cfb98c15d5.494060156eb6fffd4f6e.png",
@@ -12,11 +12,11 @@
     "static/media/face.png": "/lacasa/static/media/face.c6b489e408299b79ef16.png",
     "index.html": "/lacasa/index.html",
     "main.c39bea22.css.map": "/lacasa/static/css/main.c39bea22.css.map",
-    "main.6a1f8c3f.js.map": "/lacasa/static/js/main.6a1f8c3f.js.map",
+    "main.f8da5a6a.js.map": "/lacasa/static/js/main.f8da5a6a.js.map",
     "453.216e47c6.chunk.js.map": "/lacasa/static/js/453.216e47c6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c39bea22.css",
-    "static/js/main.6a1f8c3f.js"
+    "static/js/main.f8da5a6a.js"
   ]
 }
